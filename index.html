@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hafiz Al Shams | Web Developer</title>
+    <meta name="description"
+        content="Hafiz Al Shams is a web developer from Bangladesh building fast, user-focused web applications with React, Next.js, Node.js and MongoDB.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Apply saved theme before first paint (prevents a flash) -->
+    <script>
+        try {
+            var t = localStorage.getItem('theme') ||
+                (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <a class="skip-link" href="#projects">Skip to content</a>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="navbar">
+        <div class="container navbar-inner">
+            <a href="#home" class="logo" aria-label="Hafiz A. Shams, home">
+                <span class="logo-full">HafizA.Shams</span>
+                <span class="logo-short" aria-hidden="true">Hafiz.</span>
+            </a>
+
+            <nav class="nav-links" aria-label="Main">
+                <a href="#home" class="active" data-spy="home">Home</a>
+                <a href="#projects" data-spy="projects">Projects</a>
+                <a href="#about" data-spy="about">About</a>
+            </nav>
+
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light mode">
+                <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5" />
+                    <path
+                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+                <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <section id="home" class="hero container">
+            <div class="hero-text">
+                <p class="hero-hi">Hey, I'm Hafiz Al Shams <span aria-hidden="true">👋</span></p>
+                <h1><span class="accent">Web</span><br>Developer</h1>
+                <p class="hero-sub">A web developer passionate about applying technology to build web solutions for
+                    real-world challenges.</p>
+                <div class="btn-row">
+                    <button type="button" class="btn btn-primary" data-open="contact">Get In Touch</button>
+                    <a href="#projects" class="btn btn-outline">Browse Projects</a>
+                </div>
+            </div>
+
+            <div class="hero-photo">
+                <img src="images/hafiz.webp" alt="Hafiz Al Shams" width="420" height="420" fetchpriority="high"
+                    decoding="async">
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" class="section container">
+            <h2 class="section-title">Projects<span class="dot">.</span></h2>
+
+            <div class="projects-grid">
+
+                <article class="card card--5">
+                    <button type="button" class="card-media" data-project="curemedix"
+                        aria-label="View CureMedix details">
+                        <img src="images/curemedix.webp" alt="CureMedix website preview" width="1000" height="600"
+                            loading="lazy" decoding="async">
+                    </button>
+                    <h3 class="card-title">
+                        <button type="button" class="card-name" data-project="curemedix">CureMedix
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 16l8-8M9 8h7v7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <p class="card-desc">Medicine e-commerce and online doctor booking platform with role-based
+                        dashboards and Stripe payments.</p>
+                </article>
+
+                <article class="card card--7">
+                    <button type="button" class="card-media" data-project="elkano64" aria-label="View Elkano64 details">
+                        <img src="images/elkano64.webp" alt="Elkano64 website preview" width="1000" height="600"
+                            loading="lazy" decoding="async">
+                    </button>
+                    <h3 class="card-title">
+                        <button type="button" class="card-name" data-project="elkano64">Elkano64
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 16l8-8M9 8h7v7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <p class="card-desc">Restaurant website with food ordering, table reservations and live
+                        notifications.</p>
+                </article>
+
+                <article class="card card--12">
+                    <button type="button" class="card-media" data-project="newsnexus"
+                        aria-label="View NewsNexus details">
+                        <img src="images/newsnexus.webp" alt="NewsNexus website preview" width="1000" height="600"
+                            loading="lazy" decoding="async">
+                    </button>
+                    <h3 class="card-title">
+                        <button type="button" class="card-name" data-project="newsnexus">NewsNexus
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 16l8-8M9 8h7v7" />
+                            </svg>
+                        </button>
+                    </h3>
+                    <p class="card-desc">AI-powered news website with Guardian stories, a daily AI bulletin and smart
+                        article summaries.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" class="section container">
+            <h2 class="section-title">Skills<span class="dot">.</span></h2>
+
+            <div class="skills-grid">
+                <div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>JavaScript</li>
+                        <li>Vite</li>
+                        <li>React.js</li>
+                        <li>React Router</li>
+                        <li>Axios</li>
+                        <li>TanStack Query</li>
+                        <li>Framer Motion</li>
+                        <li>Next.js</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>RESTful APIs</li>
+                        <li>JWT</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Tools &amp; Others</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>ESLint</li>
+                        <li>Chrome DevTools</li>
+                        <li>Figma (UI/UX)</li>
+                        <li>Canva (UI/UX)</li>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Firebase</li>
+                        <li>CI/CD pipelines</li>
+                        <li>Vercel</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Detail-Oriented</li>
+                        <li>Highly Responsible</li>
+                        <li>Problem-Solver</li>
+                        <li>Quick Learner</li>
+                        <li>Collaborative</li>
+                        <li>Adaptable</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MY STORY ============ -->
+        <section id="about" class="section container">
+            <h2 class="section-title">My Story<span class="dot">.</span></h2>
+
+            <div class="story">
+                <p>I'm Hafiz, a <span class="hl">web developer</span> from Ishwardi, Pabna, Bangladesh, who loves
+                    building user-focused, performance-driven web applications with both front-end and back-end
+                    technologies.</p>
+                <p>My journey began in 2024, when I taught myself C programming through YouTube tutorials. Inspired by
+                    Jhankar Mahbub Sir's videos, I then stepped into web development with the <span
+                        class="hl">Programming Hero</span> course.</p>
+                <p>Balancing the course with a part-time job wasn't easy, but I kept learning and building so I never
+                    lost the flow.</p>
+                <p>In 2026, I completed the course, earned my certificate and built full-stack projects like CureMedix,
+                    Elkano64 and NewsNexus. Right now I'm actively looking for <span class="hl">opportunities</span>
+                    where I can solve real-world problems through web development.</p>
+                <p>Outside of coding, I enjoy traveling, video games, self-improvement books, working out, and playing
+                    cricket or badminton. I'm a huge fan of Cristiano Ronaldo and I believe in a never-give-up
+                    mentality. My goal is to become an expert developer and contribute to cutting-edge projects that
+                    impact millions worldwide. And you know what? I love what I do! <span aria-hidden="true">💜</span>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-top">
+                <nav class="footer-nav" aria-label="Footer">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <button type="button" class="footer-link" data-open="contact">Contact</button>
+                </nav>
+
+                <!-- Decorative social buttons: intentionally do nothing -->
+                <div class="socials">
+                    <button type="button" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg></button>
+                    <button type="button" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg></button>
+                    <button type="button" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg></button>
+                    <button type="button" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                        </svg></button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    <p class="footer-cta">Interested in working together<span class="dot">?</span></p>
+                    <div class="btn-row">
+                        <button type="button" class="btn btn-primary" data-open="contact">Get In Touch</button>
+                        <a href="#projects" class="btn btn-outline">Browse Projects</a>
+                    </div>
+                </div>
+                <p class="copyright">
+                    &copy;<span id="year">2026</span> All Rights Reserved.<br>
+                    Made with <span aria-hidden="true">💜</span> by Hafiz Al Shams
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- ============ PROJECT DETAILS MODAL ============ -->
+    <dialog id="project-modal" class="modal" aria-labelledby="pm-title">
+        <div class="modal-box">
+            <button type="button" class="modal-close" data-close aria-label="Close">&times;</button>
+            <p class="modal-tag" id="pm-tag"></p>
+            <h2 id="pm-title"></h2>
+            <p class="modal-text" id="pm-desc"></p>
+            <ul class="chips" id="pm-tech"></ul>
+            <a id="pm-link" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Visit Live
+                Project &#8599;</a>
+        </div>
+    </dialog>
+
+    <!-- ============ CONTACT MODAL ============ -->
+    <dialog id="contact-modal" class="modal" aria-labelledby="cm-title">
+        <div class="modal-box">
+            <button type="button" class="modal-close" data-close aria-label="Close">&times;</button>
+            <h2 id="cm-title">Get In Touch</h2>
+            <p class="modal-text">Have a project in mind? I'll get back to you within 24 hours.</p>
+
+            <form id="contact-form" action="https://formspree.io/f/xrblykpl" method="POST">
+                <label for="cf-name">Name</label>
+                <input id="cf-name" name="full_name" type="text" placeholder="Your name" autocomplete="name" required>
+
+                <label for="cf-email">Email</label>
+                <input id="cf-email" name="email_address" type="email" placeholder="you@example.com"
+                    autocomplete="email" required>
+
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project..."
+                    required></textarea>
+
+                <button type="submit" class="btn btn-primary btn-block" id="cf-submit">Send Message</button>
+                <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </dialog>
+
+</body>
+
+</html>
