@@ -7,14 +7,13 @@
     <title>Hafiz Al Shams | Web Developer</title>
     <meta name="description"
         content="Hafiz Al Shams is a web developer from Bangladesh building fast, user-focused web applications with React, Next.js, Node.js and MongoDB.">
-    <meta name="color-scheme" content="light dark">
+    <meta name="color-scheme" content="light">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- Apply saved theme before first paint (prevents a flash) -->
     <script>
         try {
-            var t = localStorage.getItem('theme') ||
-                (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            var t = localStorage.getItem('theme') || 'light';
             document.documentElement.dataset.theme = t;
         } catch (e) { }
     </script>
